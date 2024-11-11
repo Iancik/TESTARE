@@ -1,16 +1,10 @@
 package org.example.pom;
 
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import java.nio.file.Paths;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import org.openqa.selenium.JavascriptExecutor;
 
+import java.nio.file.Paths;
 
 public class FormaPage {
 
@@ -37,6 +31,24 @@ public class FormaPage {
         lastNameEL.sendKeys(lastNameParam);
     }
 
+    @FindBy(xpath = "//label[@class='custom-control-label' and text()='Male']")
+    private WebElement genderRadioMaleEl;
+
+    public void selectGenderMale() {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", genderRadioMaleEl);
+        genderRadioMaleEl.click();  // Click prin JavaScript pentru a evita erorile de interacțiune
+    }
+    public String getGender() {
+        WebElement getGenderEL = driver.findElement(By.xpath("//tbody/tr[3]/td[2]"));
+        return getGenderEL.getText();
+    }
+
+
+    public String getLastFirst() {
+        WebElement lastFirstEL = driver.findElement(By.xpath("//tbody/tr[1]/td[2]"));
+        return lastFirstEL.getText();
+    }
+
     @FindBy(xpath = "//*[@id='userEmail']")
     private WebElement userMailEl;
 
@@ -44,12 +56,12 @@ public class FormaPage {
         userMailEl.sendKeys(userMailParam);
     }
 
-    @FindBy(xpath = "//label[@class='custom-control-label' and text()='Male']")
-    private WebElement genderRadioMaleEl;
-
-    public void selectGenderMale() {
-        genderRadioMaleEl.click();
+    public String getEmail() {
+        WebElement getEmailEL = driver.findElement(By.xpath("//tbody/tr[2]/td[2]"));
+        return getEmailEL.getText();
     }
+
+
 
     @FindBy(xpath = "//*[@id='userNumber']")
     private WebElement userNumberEl;
@@ -57,6 +69,12 @@ public class FormaPage {
     public void setUserNumber(String userNumberParam) {
         userNumberEl.sendKeys(userNumberParam);
     }
+
+    public String getNumber() {
+        WebElement getNumberEL = driver.findElement(By.xpath("//tbody/tr[4]/td[2]"));
+        return getNumberEL.getText();
+    }
+
 
     @FindBy(id = "dateOfBirthInput")
     private WebElement userDateEl;
@@ -67,6 +85,12 @@ public class FormaPage {
         userDateEl.sendKeys(userDateParam);
         userDateEl.sendKeys(Keys.ENTER);
     }
+    public String getDate() {
+        WebElement getDateEL = driver.findElement(By.xpath("//tbody/tr[5]/td[2]"));
+        return getDateEL.getText();
+    }
+
+
 
     @FindBy(xpath = "//*[@id='subjectsInput']")
     private WebElement userSubjectsEl;
@@ -74,6 +98,12 @@ public class FormaPage {
     public void setUserSubjects(String userSubjectsParam) {
         userSubjectsEl.sendKeys(userSubjectsParam);
         userSubjectsEl.sendKeys(Keys.ENTER);
+    }
+
+
+    public String getSubjects() {
+        WebElement getSubjectsEL = driver.findElement(By.xpath("//tbody/tr[6]/td[2]"));
+        return getSubjectsEL.getText();
     }
 
     @FindBy(xpath = "//label[text()='Sports']")
@@ -99,7 +129,7 @@ public class FormaPage {
         currentAddressEl.sendKeys(currentAddressParam);
     }
 
-    @FindBy(id ="react-select-3-input")
+    @FindBy(id = "react-select-3-input")
     private WebElement userStateEl;
 
     public void setUserState(String userStateParam) {
@@ -107,8 +137,7 @@ public class FormaPage {
         userStateEl.sendKeys(Keys.ENTER);
     }
 
-
-    @FindBy(id ="react-select-4-input")
+    @FindBy(id = "react-select-4-input")
     private WebElement userCountryEl;
 
     public void setUserCountry(String userCountryParam) {
@@ -116,14 +145,10 @@ public class FormaPage {
         userCountryEl.sendKeys(Keys.ENTER);
     }
 
-
-
     @FindBy(xpath = "//button[@type='submit' and text()='Submit']")
     private WebElement submitButtonEl;
 
     public void clickSubmitButton() {
         submitButtonEl.click();
     }
-
-
 }
