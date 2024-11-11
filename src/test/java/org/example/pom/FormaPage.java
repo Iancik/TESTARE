@@ -151,5 +151,21 @@ public class FormaPage {
     public void clickSubmitButton() {
         submitButtonEl.click();
     }
+    public void closeAdv() {
+        JavascriptExecutor executor = null;
+        try {
+            executor.executeScript("var elem = document.evaluate(\"//footer\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;" +
+                    "elem.parentNode.removeChild(elem);");
+        }
+        catch (Exception ignored) {}
+        try {
+            executor.executeScript("var elem = document.getElementById('fixedban');" +
+                    "elem.parentNode.removeChild(elem);");
+        }
+        catch (Exception ignored) {}
+
+
+    }
+
 
 }

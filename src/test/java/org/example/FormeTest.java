@@ -3,6 +3,7 @@ package org.example;
 import org.apache.log4j.Logger;
 import org.example.pom.FormaPage;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -51,10 +52,8 @@ public class FormeTest {
         FormaPage page = new FormaPage(driver);
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
-
-
         // Completarea formularului
+        page.closeAdv();
         page.setFirstName(FIRS_NAME);
         Thread.sleep(1000);
         page.setLastName(LAST_NAME);
