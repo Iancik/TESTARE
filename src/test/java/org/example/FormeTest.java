@@ -45,7 +45,7 @@ public class FormeTest {
     }
 
     @Test
-    public void FormaTest() {
+    public void FormaTest() throws InterruptedException {
         logger.info("Test has been started");
         driver.get("https://demoqa.com/automation-practice-form");
         FormaPage page = new FormaPage(driver);
@@ -56,18 +56,30 @@ public class FormeTest {
 
         // Completarea formularului
         page.setFirstName(FIRS_NAME);
+        Thread.sleep(1000);
         page.setLastName(LAST_NAME);
+        Thread.sleep(1000);
         page.setUserMail(USER_MAIL);
+        Thread.sleep(1000);
         page.selectGenderMale();
+        Thread.sleep(1000);
         page.setUserNumber(USER_NUMBER);
+        Thread.sleep(1000);
         page.setUserDate(USER_DATE);
+        Thread.sleep(1000);
         page.setUserSubjects(USER_SUBJECTS);
+        Thread.sleep(1000);
         page.hobbiesCheckbox();
+        Thread.sleep(1000);
 //        page.uploadFile();
         page.setcurrentAddress(USER_ADRESS);
+        Thread.sleep(1000);
         page.setUserState(USER_STATE);
+        Thread.sleep(1000);
         page.setUserCountry(USER_COUNTRY);
+        Thread.sleep(1000);
         page.clickSubmitButton();
+        Thread.sleep(5000);
 
         // Asserts
 //        Assert.assertEquals(page.getLastFirst(), FIRS_NAME + " " + LAST_NAME, "First and Last Name do not match.");

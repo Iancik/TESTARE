@@ -151,4 +151,5 @@ public class FormaPage {
     public void clickSubmitButton() {
         submitButtonEl.click();
     }
+
 }
