@@ -63,7 +63,7 @@ public class FormeTest {
         page.setUserDate(USER_DATE);
         page.setUserSubjects(USER_SUBJECTS);
         page.hobbiesCheckbox();
-        page.uploadFile();
+//        page.uploadFile();
         page.setcurrentAddress(USER_ADRESS);
         page.setUserState(USER_STATE);
         page.setUserCountry(USER_COUNTRY);

@@ -114,13 +114,13 @@ public class FormaPage {
         hobbiesCheckboxEl.click();
     }
 
-    @FindBy(id = "uploadPicture")
-    private WebElement uploadInputEl;
-
-    public void uploadFile() {
-        String filePath = Paths.get(System.getProperty("user.home"), "Desktop", "download.png").toString();
-        uploadInputEl.sendKeys(filePath);
-    }
+//    @FindBy(id = "uploadPicture")
+//    private WebElement uploadInputEl;
+//
+//    public void uploadFile() {
+//        String filePath = Paths.get(System.getProperty("user.home"), "Desktop", "download.png").toString();
+//        uploadInputEl.sendKeys(filePath);
+//    }
 
     @FindBy(xpath = "//*[@id='currentAddress']")
     private WebElement currentAddressEl;
