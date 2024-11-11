@@ -1,0 +1,26 @@
+2024-11-11 15:35:21,334 +0200 [main] INFO  (FormeTest.java:48) - Test has been started
+2024-11-11 15:36:02,700 +0200 [main] INFO  (FormeTest.java:73) - Name has been set
+2024-11-11 15:36:02,753 +0200 [main] INFO  (FormeTest.java:75) - Email has been set
+2024-11-11 15:36:02,848 +0200 [main] INFO  (FormeTest.java:84) - Test finish, OK
+2024-11-11 15:38:22,125 +0200 [main] INFO  (FormeTest.java:48) - Test has been started
+2024-11-11 15:38:37,228 +0200 [main] INFO  (FormeTest.java:48) - Test has been started
+2024-11-11 15:39:08,091 +0200 [main] INFO  (FormeTest.java:48) - Test has been started
+2024-11-11 15:39:15,854 +0200 [main] INFO  (FormeTest.java:73) - Name has been set
+2024-11-11 15:39:15,909 +0200 [main] INFO  (FormeTest.java:75) - Email has been set
+2024-11-11 15:39:15,957 +0200 [main] INFO  (FormeTest.java:77) - Gender has been set
+2024-11-11 15:39:15,995 +0200 [main] INFO  (FormeTest.java:85) - Test finish, OK
+2024-11-11 15:46:39,129 +0200 [main] INFO  (FormeTest.java:48) - Test has been started
+2024-11-11 15:46:58,410 +0200 [main] INFO  (FormeTest.java:73) - Name has been set
+2024-11-11 15:46:58,472 +0200 [main] INFO  (FormeTest.java:75) - Email has been set
+2024-11-11 15:46:58,534 +0200 [main] INFO  (FormeTest.java:77) - Gender has been set
+2024-11-11 15:46:58,568 +0200 [main] INFO  (FormeTest.java:85) - Test finish, OK
+2024-11-11 15:49:19,683 +0200 [main] INFO  (FormeTest.java:48) - Test has been started
+2024-11-11 15:49:26,781 +0200 [main] INFO  (FormeTest.java:73) - Name has been set
+2024-11-11 15:49:26,836 +0200 [main] INFO  (FormeTest.java:75) - Email has been set
+2024-11-11 15:49:26,858 +0200 [main] INFO  (FormeTest.java:77) - Gender has been set
+2024-11-11 15:49:26,891 +0200 [main] INFO  (FormeTest.java:85) - Test finish, OK
+2024-11-11 15:51:11,398 +0200 [main] INFO  (FormeTest.java:48) - Test has been started
+2024-11-11 15:51:47,295 +0200 [main] INFO  (FormeTest.java:73) - Name has been set
+2024-11-11 15:51:47,377 +0200 [main] INFO  (FormeTest.java:75) - Email has been set
+2024-11-11 15:51:47,453 +0200 [main] INFO  (FormeTest.java:77) - Gender has been set
+2024-11-11 15:51:47,502 +0200 [main] INFO  (FormeTest.java:85) - Test finish, OK
