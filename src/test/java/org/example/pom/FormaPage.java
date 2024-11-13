@@ -162,7 +162,7 @@ public class FormaPage {
         }
 
         try {
-            executor.executeScript("var elem = document.getElementById('fixedban');" +
+            executor.executeScript("var elem = document.getElementById('banner-vanilla');" +
                     "if (elem) elem.parentNode.removeChild(elem);");
         } catch (Exception e) {
             System.out.println("Fixed banner removal failed: " + e.getMessage());
