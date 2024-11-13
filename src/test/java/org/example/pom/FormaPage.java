@@ -156,18 +156,14 @@ public class FormaPage {
 
         try {
             executor.executeScript("var elem = document.evaluate(\"//footer\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;" +
-                    "if (elem) elem.parentNode.removeChild(elem);");
-        } catch (Exception e) {
-            System.out.println("Footer element removal failed: " + e.getMessage());
+                    "elem.parentNode.removeChild(elem);");
         }
-
+        catch (Exception ignored) {}
         try {
-            executor.executeScript("var elem = document.getElementById('banner-vanilla');" +
-                    "if (elem) elem.parentNode.removeChild(elem);");
-        } catch (Exception e) {
-            System.out.println("Fixed banner removal failed: " + e.getMessage());
+            executor.executeScript("var elem = document.getElementById('fixedban');" +
+                    "elem.parentNode.removeChild(elem);");
         }
-
+        catch (Exception ignored) {}
     }
 
 

@@ -20,7 +20,6 @@ import org.testng.annotations.Test;
 
 
 public class FormeTest {
-
     public static Logger logger = Logger.getLogger(FormeTest.class);
 
     public static String FIRS_NAME = "Anatolie";
