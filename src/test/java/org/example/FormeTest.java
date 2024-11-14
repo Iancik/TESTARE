@@ -22,15 +22,15 @@ import org.testng.annotations.Test;
 public class FormeTest {
     public static Logger logger = Logger.getLogger(FormeTest.class);
 
-    public static String FIRS_NAME = "Plamadeala";
-    public static String LAST_NAME = "Ioan";
-    public static String USER_MAIL = "ioanplamadeala@gmail.com";
-    public static String USER_NUMBER = "0623451234";
+    public static String FIRS_NAME = "Anatolie";
+    public static String LAST_NAME = "Snegur";
+    public static String USER_MAIL = "ianiovita005@gmail.com";
+    public static String USER_NUMBER = "0602989201";
     public static String USER_SUBJECTS = "hindi";
-    public static String USER_ADRESS = "str. Dacia, nr.24";
+    public static String USER_ADRESS = "str. Sfanta Treime, nr. 2";
     public static String USER_STATE = "Haryana";
     public static String USER_COUNTRY = "Karnal";
-    public static String USER_DATE = "20 Jan 2006";
+    public static String USER_DATE = "31 Oct 2005";
 
     public static WebDriver driver;
 
